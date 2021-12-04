@@ -28,8 +28,9 @@ class MyWin(QMainWindow):
             self.flag = False
 
     def draw(self, qp):
-        qp.setPen(QPen(Qt.yellow, 10, Qt.SolidLine))
         for i in range(random.randint(1, 10)):
+            qp.setPen(QPen(QColor(random.randint(0, 255), random.randint(0, 255),
+                                  random.randint(0, 155)), 10, Qt.SolidLine))
             rad = random.randint(10, 100)
             cor_X = random.randint(0, 740)
             cor_Y = random.randint(0, 510)
